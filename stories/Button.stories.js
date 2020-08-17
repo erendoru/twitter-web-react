@@ -3,20 +3,22 @@ import React from "react";
 import Button from "../components/button";
 import NavButton from "../components/navigation-button";
 import Navigation from "../components/navigation";
+import ThemeButton from "../components/theme-button";
 
 import { Home } from "../components/icons";
-import TitleBold from "./../components/title-bold";
+import TextBold from "./../components/text-bold";
 
 export default {
   title: "Buttons",
 };
 
-export const Normal = () => <Button>save</Button>;
+export const Normal = () => <Button>Save</Button>;
+export const Theme = () => <ThemeButton>Save</ThemeButton>;
 
 export const NavigationButton = () => (
   <NavButton>
     <Home />
-    <TitleBold>Home</TitleBold>
+    <TextBold>Home</TextBold>
   </NavButton>
 );
 

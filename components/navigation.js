@@ -1,7 +1,7 @@
 import React from "react";
 
 import NavButton from "./navigation-button";
-import TitleBold from "./title-bold";
+import TitleBold from "../components/text-bold";
 import {
   Twitter,
   Home,
