@@ -7,15 +7,19 @@ import Photo from "./photo";
 import Button from "./button";
 import TextBody from "./text-body";
 
-function ProfileBox({ slug = "erendoru", name = "Eren Doru" }) {
+function ProfileBox({ flat = false, slug = "erendoru", name = "Eren Doru" }) {
   return (
     <Button className={cn(styles.box)}>
-      <Photo />
-      <div className={styles.body}>
-        <TextBody bold>{name}</TextBody>
-        <TextBody className={styles.slug}>@{slug}</TextBody>
-      </div>
-      <ArrowBottom className={styles.icon} />
+      <Photo size={39} />
+      {!flat && (
+        <>
+          <div className={styles.body}>
+            <TextBody bold>{name}</TextBody>
+            <TextBody className={styles.slug}>@{slug}</TextBody>
+          </div>
+          <ArrowBottom className={styles.icon} />
+        </>
+      )}
     </Button>
   );
 }
