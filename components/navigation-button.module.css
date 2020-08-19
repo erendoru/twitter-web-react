@@ -9,6 +9,13 @@
       margin-right: 15px;
     }
   }
+
+  &:global(.twitter) {
+    color: var(--c-theme);
+    :global(html:not(.light)) & {
+      color: White;
+    }
+  }
 }
 
 .navButtonSelected {
