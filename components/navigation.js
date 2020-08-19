@@ -1,6 +1,7 @@
 import React from "react";
 import { useRouter } from "next/router";
 
+import cn from "classnames";
 import { MENU } from "../constants/index";
 import styles from "./navigation.module.css";
 
@@ -14,13 +15,14 @@ function Navigation({ flat = false }) {
       {MENU.map((menu) => {
         const showTitle = !flat && menu.title.length > 0;
         const selected = router.pathname === menu.path;
+
         return (
           <NavButton
             key={menu.key}
             notify={menu.notify}
             selected={selected}
             href={menu.path}
-            className={styles.navButton}
+            className={cn(styles.navButton, menu.key)}
           >
             {selected ? menu.iconSelected : menu.icon}
             {showTitle && <TitleBold>{menu.title}</TitleBold>}
