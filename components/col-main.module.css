@@ -1,5 +1,5 @@
 .main {
   border-left: 1px;
   border-style: solid;
-  border-color: #333;
+  border-color: var(--c-border-color);
 }
