@@ -11,7 +11,7 @@ export const MENU = [
   {
     key: "twitter",
     path: "/",
-    icon: <Icon.Twitter style={{ fontSize: 30, color: "white" }} />,
+    icon: <Icon.Twitter style={{ fontSize: 30 }} />,
     iconSelected: <Icon.Twitter />,
     title: "",
     notify: 0,
