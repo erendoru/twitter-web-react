@@ -1,1 +1,1 @@
-Twitter Klon
+Twitter Clone with NextJS
